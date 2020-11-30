@@ -32,6 +32,7 @@ body {
     width: 34px;
   }
 
+  /* for individual square color */
   .blue {
     color: blue;
   }
@@ -40,12 +41,18 @@ body {
     color: red;
   }
   
+  /* for individual square while in focus */
   .square:focus {
     outline: none;
+    font-weight: bold;
+    
   }
   
+  
+
   .kbd-navigation .square:focus {
-    background: #ddd;
+    font-weight: bolder;   
+
   }
   
   .game {

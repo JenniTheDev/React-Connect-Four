@@ -31,8 +31,9 @@ body {
     text-align: center;
     width: 34px;
   }
+  
 
-  /* for individual square color */
+  /* for gamepiece square colors */
   .blue {
     color: blue;
   }
@@ -43,16 +44,16 @@ body {
   
   /* for individual square while in focus */
   .square:focus {
-    outline: none;
-    font-weight: bold;
-    
+    outline: none; 
   }
   
-  
-
   .kbd-navigation .square:focus {
     font-weight: bolder;   
+    outline: bolder;
+  }
 
+  .kbd-navigation:focus{
+    outline: bolder;
   }
   
   .game {

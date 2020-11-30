@@ -30,6 +30,7 @@ body {
     padding: 0;
     text-align: center;
     width: 34px;
+    
   }
   
 
@@ -45,23 +46,31 @@ body {
   /* for individual square while in focus */
   .square:focus {
     outline: none; 
+    
   }
-  
+
+   
   .kbd-navigation .square:focus {
     font-weight: bolder;   
-    outline: bolder;
+    
   }
 
   .kbd-navigation:focus{
-    outline: bolder;
+    opacity: 0.6;
   }
   
+  /* entire game */
   .game {
     display: flex;
     flex-direction: row;
+    
   }
   
+  /* bars on the right */
   .game-info {
     margin-left: 20px;
   }
+
+
+ 
   

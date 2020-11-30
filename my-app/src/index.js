@@ -24,7 +24,7 @@ class Board extends React.Component {
   render() {
     return (
       <div>
-        
+         
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -74,7 +74,11 @@ class Board extends React.Component {
           {this.renderSquare(39)}
           {this.renderSquare(40)}
           {this.renderSquare(41)}
-        </div>
+        </div> 
+    
+
+
+
       </div>
     );
   }
@@ -86,7 +90,7 @@ class Game extends React.Component {
     this.state = {
       history: [
         {
-          squares: Array(9).fill(null)
+          squares: Array(37).fill(null)
         }
       ],
       stepNumber: 0,
@@ -128,13 +132,14 @@ class Game extends React.Component {
 
     const moves = history.map((step, move) => {
       const desc = move ?
-        'Go to move #' + move :
+        'Go to move #' + move + " " + step.squares.slice(move):
        
         'Go to game start';
 
       return (
         <li key={move}>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
+
         </li>
       );
     });
